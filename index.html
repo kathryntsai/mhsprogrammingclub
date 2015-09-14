@@ -7,6 +7,7 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
 	<title>MHS Programming Club</title>
 	<link href="mhsprogrammingclub_files/bootstrap.min.css" rel="stylesheet">
 	<link href="mhsprogrammingclub_files/slim-081711.css" rel="stylesheet" type="text/css"><!--***-->
@@ -14,12 +15,35 @@
 
     <script src="mhsprogrammingclub_files/jquery.min.js"></script><style type="text/css"></style>
 	<script src="mhsprogrammingclub_files/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type='text/javascript' src='mhsprogrammingclub_files/animation.js'></script>
+
 	<meta property="og:title" content="Moorestown HS Programming Club 2015-2016"> 
  	<!--<meta property="og:image" content="http://mhacks.org/images/mhacks_logo.jpg"> -->
  	<meta property="og:description" content="Code, hack, compete!"> 
  	<!--<meta property="og:url" content="http://mhacks.org/">-->
  	<meta property="og:image:width" content="200">
 	<meta property="og:image:height" content="237">
+<<<<<<< HEAD
+	<!--<link rel="icon" href="mhsprogrammingclub_files/favicon.ico">-->
+	<link rel="apple-touch-icon" sizes="57x57" href="mhsprogrammingclub_files/mtownquaker.ico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="mhsprogrammingclub_files/mtownquaker.ico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="mhsprogrammingclub_files/mtownquaker.ico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="mhsprogrammingclub_files/mtownquaker.ico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="mhsprogrammingclub_files/mtownquaker.ico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="mhsprogrammingclub_files/mtownquaker.ico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="mhsprogrammingclub_files/mtownquaker.ico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="mhsprogrammingclub_files/mtownquaker.ico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="mhsprogrammingclub_files/mtownquaker.ico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="mhsprogrammingclub_files/mtownquaker.ico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="mhsprogrammingclub_files/mtownquaker.ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="mhsprogrammingclub_files/mtownquaker.ico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="mhsprogrammingclub_files/mtownquaker.ico/favicon-16x16.png">
+	<link rel="manifest" href="mhsprogrammingclub_files/mtownquaker.ico/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="mhsprogrammingclub_files/mtownquaker.ico/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+=======
 	<link rel="icon" href="favicon.ico">
 	
 <script>
@@ -27,23 +51,23 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+>>>>>>> gh-pages
 
   ga('create', 'UA-67545142-1', 'auto');
   ga('send', 'pageview');
 
 </script></head>
 
-<body>
+<body onresize="canvassetup()">
+<canvas id="dots"></canvas>
 <div class="container-fluid">
-
 		<div class="row">
-
 				<div class="section" id="header">
-					<!--logo<img class="header-image" src="">-->
+					<img class="header-image" src="mhsprogrammingclub_files/mtownquaker.png">
 					<h1><b>MHS Programming Club</b></h1>
-                    <h5 class="info">Code, hack, compete, repeat.</h5>
+                    <h4 class="info">Code, hack, compete, repeat.</h4>
 					<h5 class="info">Moorestown High School</h5>
-					<h5 class="info">2015-2016</h5>
+					<h6 class="info">2015-2016</h6>
 					<br>
                    
 				</div>
@@ -70,7 +94,6 @@
 			    </div>
 			  </div>
 			</nav>
-
 			<div class="section_skewed" id="welcome">
 					<div class="content">
 						<div class="social-icons">
@@ -79,9 +102,9 @@
 							<a target="_blank" href="https://medium.com/"><img src="mhsprogrammingclub_files/medium.svg"></a>
 
 							<a target="_blank" href="https://twitter.com/"><img src="mhsprogrammingclub_files/twitter.svg"></a>
-						</div>
-						<br>
-                        <p>Code, hack, compete, repeat.</p>
+						</div><br>
+                        <h3>Welcome to MHS Programming Club!</h3>
+                        <p>We meet every Friday 12th period in C113!</p>
 					</div>
 
 				</div>
@@ -90,7 +113,9 @@
 				<div class="content" style="margin-bottom:0;">
 					<h3>About</h3>
              		
-             		<p>[Moorestown High School - About]</p>
+             		<p>Programming Club offers students of all experience levels with technology opportunities to learn new programming languages, participate in competitions, and prepare for careers in computer science and engineering.</p>
+             		<br>
+             		<p>No experience required! </p>
 
 					<!--<p class="hacker_intro"><b>At MHacks 6, being a hacker means being a:</b></p>
 
@@ -232,7 +257,9 @@
 		<div class="section" id="contact">
 				<div class="content" style="padding-top:0; padding-bottom:0;">
 					<h3>Contact</h3>
-					<p>Mr. Orak - Advisor</p>
+					<h5>For more information:</h5>
+					<p>Mr. Orak (borak@mtps.us) </p>
+					<p>Katie Tsai (16tsaik@mtps.us)</p>
 				</div>
 		</div>
 
@@ -240,7 +267,9 @@
 					<div class="footer_content" style="padding:0;">
                         <h3>MHS Programming Club</h3>
 
-                        <p>© 2015-2016 Kathryn Tsai</p>
+                        <p>&copy 
+                        	<script>document.write(new Date().getFullYear())</script> Kathryn Tsai
+                       	</p>
                         <p><a href="mailto:16tsaik@mtps.us">16tsaik@mtps.us</a></p>
 
                         <!--<img id="mlh" src="./MHacks 6_files/mlh-logo-white.png">-->
