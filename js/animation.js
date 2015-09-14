@@ -1,7 +1,7 @@
-//var WIDTH = window.innerWidth;
-//var HEIGHT = window.innerHeight;
-var WIDTH = 150;
-var HEIGHT = 150;
+var WIDTH = window.innerWidth;
+var HEIGHT = window.innerHeight;
+//var WIDTH = 150;
+//var HEIGHT = 150;
 var accentColor;
 var canvas;
 var con;
