@@ -19,7 +19,8 @@ jQuery.fn.outerHTML = function(s) {
         : jQuery("<p>").append(this.eq(0).clone()).html();
 };
 
-jQuery(document).ready(function($) {
+
+/*jQuery.(document).ready(function($) {
 
 	(function updateSocialMediaIcons()
 	{
@@ -33,4 +34,24 @@ jQuery(document).ready(function($) {
 		$('.time').html(date2 +  '<span class="sec">'+now.format('ss')+'</span>' + date3, 2000);
 		
 	})();
-}
+};*/
+
+$(document).ready(function(){
+	
+	(function updateDate()
+	{
+        var now = moment();
+        var date = now.format('LLLL').split(' ',4);
+        date = date[0] + ' ' + date[1] + ' ' + date[2] + ', ' + date[3];
+
+		$('.date').html(date);
+		date2 = now.format('LLLL').substring(date.length, now.format('LLLL').length - 3);
+		date3 = now.format('LLLL').substring(now.format('LLLL').length - 3).toLowerCase();
+		$('.time').html(date2 +  '<span class="sec">'+now.format('ss')+'</span>' + date3, 2000);
+		
+	})();
+
+	(function updateSocialMediaIcons()
+	{
+	})();
+})
