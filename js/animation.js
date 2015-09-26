@@ -20,7 +20,7 @@ $(function() {
 		pxs[i].reset();
 	}
 	requestAnimationFrame(draw);
-	setaccentcolor();
+	//setaccentcolor();
 	//$('a').smoothScroll();
 });
 
@@ -47,10 +47,10 @@ function canvassetup() {
 	con = canvas.getContext('2d');
 }
 
-function setaccentcolor() {
-	var colorblocks = ['red', 'orange', 'yellow', 'green', 'blue'];
-
-	accentColor = colorblocks[Math.floor(Math.random() * colorblocks.length)];
+/*function setaccentcolor() {
+	//var colorblocks = ['red', 'orange', 'yellow', 'green', 'blue'];
+	//accentColor = colorblocks[Math.floor(Math.random() * colorblocks.length)];
+	accentColor = 'green';
 }
 
 function addaccentcolor() {
@@ -69,7 +69,7 @@ function addaccentcolor() {
 		document.getElementsByTagName('a')[k + 5].className += ' ' + accentColor + '-font';
 		// added the +5 to not affect the <nav>... kinda hacky
 	}
-}
+}*/
 
 function cmousedown(e) {
 	cx = e.pageX;
@@ -94,8 +94,9 @@ function draw() {
 }
 
 function random_color() {
-	var colors = ['#d32542', '#ff7f19', '#ffc500', '#a3de00', '#25c7d3'];
-	return colors[Math.floor(Math.random() * colors.length)];
+	//var colors = ['#d32542', '#ff7f19', '#ffc500', '#a3de00', '#25c7d3'];
+	//return colors[Math.floor(Math.random() * colors.length)];
+	return '#d32542';
 }
 
 function Dot(color) {
