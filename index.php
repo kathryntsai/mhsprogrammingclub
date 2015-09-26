@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
 
-<!--Hello hello, Moorestown students.-->
+<!--Hello Moorestown students.-->
 
 <head>
 
@@ -9,18 +9,29 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
 	<title>MHS Programming Club</title>
+	<!--BootstrapCSS-->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!--MailChimp-->
 	<link href="css/slim-081711.css" rel="stylesheet" type="text/css">
+	<!--CustomCSS-->
 	<link href="css/custom.css" rel="stylesheet">
-
+	<!--jQuery-->
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+	<!--Bootstrap-->
+    <script src="js/bootstrap.min.js"></script>
+	<!--Moment.js-->
+	<script src="js/moment-with-langs.min.js"></script>
+	<!--CSS and Animation-->
     <style type="text/css"></style>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type='text/javascript' src='js/animation.js'></script>
+	<script type='text/javascript'>
+		var gitHash = '<?php echo trim(`git rev-parse HEAD`) ?>';
+	</script>
 
+	<!--Open Graph Meta-->
 	<meta property="og:title" content="Moorestown HS Programming Club 2015-2016"> 
- 	<!--<meta property="og:image" content="http://mhacks.org/images/mhacks_logo.jpg"> -->
+ 	<meta property="og:image" content="images/mtownquaker.png">
  	<meta property="og:description" content="Code, hack, compete!"> 
  	<meta property="og:url" content="http://kathryntsai.github.io/mhsprogrammingclub/">
  	<meta property="og:image:width" content="200">
@@ -109,7 +120,7 @@
 				<div class="content" style="margin-bottom:0;">
 					<h3>About</h3>
              		
-             		<p>Programming Club offers students of all experience levels with technology opportunities to learn new programming languages, participate in competitions, and prepare for careers in computer science and engineering.</p>
+             		<p class="club-description">Programming Club offers students of all experience levels with technology opportunities to learn new programming languages, participate in competitions, and prepare for careers in computer science and engineering.</p>
              		<br>
              		<p>No experience required! </p>
 
@@ -268,7 +279,8 @@
                         <p><a href="mailto:16tsaik@mtps.us">Email Katie!</a></p>
 
                         <!--<img id="mlh" src="./MHacks 6_files/mlh-logo-white.png">-->
-
+                        <div class='date'></div>
+                        <div class='time'></div>
                         <div class="social-icons">
                             <a target="_blank" href="https://www.facebook.com/"><img src="images/facebook.svg"></a>
 
@@ -281,7 +293,7 @@
                 </div>
 		</div> <!--row-->
 	</div><!--container-fluid-->
-	<script src="js/custom.js"></script>
+	<!--<script src="js/custom.js"></script>-->
 	<script src="js/main.js"></script>
 
 <style>#header + #content > #left > #rlblock_left,
